@@ -15,6 +15,18 @@ body {
   min-height: 100vh;
   padding-bottom: 80px; /* Space for navbar */
 }
+.fixed-app-size {
+  position: relative;
+  width: 456px;
+  height: 1030px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional visual frame */
+  border-radius: 1rem; /* optional rounded edge */
+  position: relative;
+}
+
 
 .main-content {
   max-width: 448px; /* Equivalent to max-w-md */
@@ -92,7 +104,7 @@ body {
 
 /* Navbar */
 .navbar {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;

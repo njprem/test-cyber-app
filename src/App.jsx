@@ -578,14 +578,20 @@ const App = () => {
   };
 
   return (
+  <div className="fixed-app-size">
     <div className="app-container">
       <div className="main-content">
         {renderPage()}
       </div>
       <Navbar setCurrentPage={setCurrentPage} />
-      <AlertModal isOpen={isAlertModalOpen} message={alertMessage} onClose={() => setIsAlertModalOpen(false)} />
+      <AlertModal
+        isOpen={isAlertModalOpen}
+        message={alertMessage}
+        onClose={() => setIsAlertModalOpen(false)}
+      />
     </div>
-  );
+  </div>
+);
 };
 
 export default App;
